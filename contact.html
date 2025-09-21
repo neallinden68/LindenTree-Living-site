@@ -3,27 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - My Website</title>
+  <title>Contact - LindenTree Living</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="logo">
+        <img src="Logo.png" alt="LindenTree Living Logo" class="logo-img">
+      </h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>You can add a contact form or social media links here.</p>
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Call, message, or schedule a showing below.</p>
+
+    <!-- Phone Number -->
+    <h3>Call or Text</h3>
+    <p><a href="tel:+12175551234" class="phone-link">(217) 555-1234</a></p>
+
+    <!-- Contact Form -->
+    <h3>Send Us a Message</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+      <label>
+        Your Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Schedule Button -->
+    <h3>Schedule a Showing</h3>
+    <p>
+      <a href="https://calendly.com/your-scheduling-link" class="btn secondary" target="_blank">
+        Book a Time
+      </a>
+    </p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 LindenTree Living. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
