@@ -3,26 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - My Website</title>
+  <title>LindenTree Living</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>My Website</h1>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="logo">LindenTree Living</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Welcome!</h2>
-    <p>This is the homepage of your new site. Use this space to introduce yourself or your project.</p>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Your Next Home Awaits</h2>
+      <p>Quality, comfort, and community – find your perfect rental today.</p>
+      <a href="#properties" class="btn">View Properties</a>
+    </div>
+  </section>
+
+  <!-- Properties Section -->
+  <section id="properties" class="properties">
+    <div class="container">
+      <h2>Available Property</h2>
+      <div class="property-card">
+        <img src="property1.jpg" alt="Property Photo">
+        <div class="property-info">
+          <h3>123 Main Street</h3>
+          <p>2 Bed · 1 Bath · $1,200/month</p>
+          <a href="contact.html" class="btn">Schedule a Tour</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="about-preview">
+    <div class="container">
+      <h2>About LindenTree Living</h2>
+      <p>We provide comfortable, well-maintained rental homes with a focus on excellent tenant experience.</p>
+      <a href="about.html" class="btn secondary">Learn More</a>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 LindenTree Living. All rights reserved.</p>
   </footer>
 </body>
 </html>
